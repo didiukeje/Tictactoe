@@ -1,0 +1,36 @@
+ .board {
+    display: flex;
+    flex-wrap: wrap;
+    width: 303px;
+    height: 303px;
+    background: #cfcdcd;
+    border: 1px solid #e4e8b6;
+    margin-right: 2em;
+}
+.row {
+    background: rebeccapurple;
+}
+.cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #d5eba2;
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+}
+  
+.gamecontrols {
+    margin-top: 1em;
+    font-size: 0.5em;
+    z-index: 11;
+}
+.board-container {
+    display: flex;
+}
+.winner-table {
+    font-family: cursive;
+    border-radius: 10px;
+    font-size: 0.5em;
+    color: rebeccapurple;
+} 
