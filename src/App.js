@@ -25,7 +25,7 @@ function App() {
         <div className="playerinformation">
           {player2 && <span> {player2} is '0' </span>}
         </div>
-      </div>
+      </div> 
       <div className="game-container">
         <TicTacToe player1={player1} player2={player2} />
       </div>

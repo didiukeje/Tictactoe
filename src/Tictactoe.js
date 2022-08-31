@@ -97,6 +97,7 @@ const TicTacToe = (props) => {
   };
 
   const playMyTurn = (e, index) => {
+    if (winner || checkForTie()) return;
     if (e.target.innerText === "") {
       const currentVal = turn === 0 ? "X" : "0";
       let dataListArry = dataList;
@@ -108,7 +109,7 @@ const TicTacToe = (props) => {
       return false;
     }
   };
-
+ 
   return (
     <>
       <div className="board-container">
