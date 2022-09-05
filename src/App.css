@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  background-image: url(bckgrd.jpg);
+  background: #1c3448;
   background-size: cover; 
   background-repeat: no-repeat;
   height: 100vh;

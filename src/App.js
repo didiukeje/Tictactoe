@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "./App.css";
+import "./App.css"; 
 import TicTacToe from "./TicTacToe";
 function App() {
   const [player1, setPlayer1] = useState("");

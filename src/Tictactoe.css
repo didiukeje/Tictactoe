@@ -1,14 +1,28 @@
+.playerinfo {
+    margin-bottom: 15px;
+    width: 380px;
+    font-size: 30px;
+    padding: 15px;
+    box-sizing: border-box;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    font-family: Open Sans;
+    vertical-align: baseline; 
+    line-height: normal;
+    outline: 0; 
+    box-shadow: none;   
+}
 .board {
     display: flex;
     flex-wrap: wrap;
     width: 306px;
     height: 306px;
-    background: #cfcdcd;
+    background: #231709;
     border: 1px solid #e4e8b6;
     margin-right: 2em;
 }
 .row {
-    background: rebeccapurple;
+    background: #231709;
 }
 .cell {
     display: flex;
@@ -33,6 +47,33 @@
 .winner-table {
     font-family: cursive;
     border-radius: 10px;
-    font-size: 0.5em;
+    border: 1px solid ;
+    font-size: 30px;
     color: rebeccapurple;
 } 
+.resetBtn {
+    box-sizing: border-box;
+    color: #fff;
+    text-align: center;
+    padding: 15px; 
+    font-family: Open Sans;
+    font-weight: 600;
+    border-radius: 3px;
+    border: 1px solid #80471c; 
+    background: linear-gradient(180deg,#80471c 0,#80471c);
+    cursor: pointer;
+    line-height: normal; 
+    vertical-align: baseline; 
+    display: inline-block;
+    align-items: flex-start;
+}
+.resetBtn:hover {
+    background: #9a7b4f;
+}
+.player-information {
+    font-size: 20px;
+}
+.game-container {
+    font-size: 30px;
+    color: #ccc;
+}
