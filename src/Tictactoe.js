@@ -17,7 +17,6 @@ const TicTacToe = (props) => {
 
   const [winner, setWinner] = useState("");
   const ref = useRef(null);
-
   const resetGame = () => {
     const board = Array.from(ref.current.children);
     board.forEach((cell) => {

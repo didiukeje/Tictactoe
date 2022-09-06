@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="App">
       <div className="playerinfo">
-        <input
+        <input 
           type="text"
           value={player1}
           placeholder="Player 1 name"

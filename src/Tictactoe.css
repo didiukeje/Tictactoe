@@ -1,39 +1,74 @@
-.playerinfo {
+.playerinfo{
     margin-bottom: 15px;
     width: 380px;
     font-size: 30px;
-    padding: 15px;
+    padding: 15px; 
     box-sizing: border-box;
     border-radius: 3px;
     border: 1px solid #ccc;
-    font-family: Open Sans;
-    vertical-align: baseline; 
+    align-items: center;
+    margin: auto;
     line-height: normal;
-    outline: 0; 
-    box-shadow: none;   
+    outline: none; 
+    box-shadow: 0 0 0 1px #ccc; 
+}
+.playerinfo input {
+   height: 30px;
+   border-radius: 3px;
+   border: 1px solid #ccc;
+}
+
+input[type=text]:focus {
+    outline: none;
+    box-shadow: 0 0 0 1px #ccc;
+    border: 1px solid #ccc;
+    border-radius: 1px;
+  }
+::placeholder {
+    color: #ccc;
+}
+.board-container {
+    align-items: center;
 }
 .board {
     display: flex;
     flex-wrap: wrap;
     width: 306px;
     height: 306px;
-    background: #231709;
-    border: 1px solid #e4e8b6;
-    margin-right: 2em;
+    background: #1c3448;
+    border: 1px solid #40E0D0;
+    margin-top: 40px;
 }
+
 .row {
-    background: #231709;
+    background: #1c3448;
 }
 .cell {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid #d5eba2;
+    border: 1px solid #40E0D0;
     width: 100px;
     height: 100px;
     cursor: pointer;
 }
-  
+@media screen and (max-width: 625px) {
+    .playerinfo {
+        padding-top: 0;
+    }
+    .board-container {
+        width: 100%;
+    }
+    .board {
+      width: 250px;
+      height: 250px;
+      overflow: hidden;
+    }
+    .cell {
+      width: 81px;
+      height: 81px;
+    }
+  }
 .gamecontrols {
     margin-top: 1em;
     font-size: 0.5em;
@@ -47,9 +82,9 @@
 .winner-table {
     font-family: cursive;
     border-radius: 10px;
-    border: 1px solid ;
+    /* border: 1px solid ; */
     font-size: 30px;
-    color: rebeccapurple;
+    color: #fff;
 } 
 .resetBtn {
     box-sizing: border-box;
@@ -59,8 +94,8 @@
     font-family: Open Sans;
     font-weight: 600;
     border-radius: 3px;
-    border: 1px solid #80471c; 
-    background: linear-gradient(180deg,#80471c 0,#80471c);
+    border: 1px solid #40E0D0; 
+    background: linear-gradient(180deg,#40E0D0 0,#40E0D0);
     cursor: pointer;
     line-height: normal; 
     vertical-align: baseline; 
@@ -68,10 +103,11 @@
     align-items: flex-start;
 }
 .resetBtn:hover {
-    background: #9a7b4f;
+    background: #1c3448;
 }
-.player-information {
-    font-size: 20px;
+.playerinformation span{
+    font-size: 30px;
+    color: #fff;
 }
 .game-container {
     font-size: 30px;
