@@ -112,6 +112,13 @@ const TicTacToe = (props) => {
   return (
     <>
       <div className="board-container">
+        {winner !== "" && (
+          <>
+            <div className="winner-table">
+              <span className="winner-text">{winner}</span>
+            </div>
+          </>
+        )}
         <div className="board" ref={ref}>
           <div className="cell" onClick={(e) => playMyTurn(e, 0)}></div>
           <div className="cell" onClick={(e) => playMyTurn(e, 1)}></div>
@@ -123,13 +130,6 @@ const TicTacToe = (props) => {
           <div className="cell" onClick={(e) => playMyTurn(e, 7)}></div>
           <div className="cell" onClick={(e) => playMyTurn(e, 8)}></div>
         </div>
-        {winner !== "" && (
-          <>
-            <div className="winner-table">
-              <span className="winner-text">{winner}</span>
-            </div>
-          </>
-        )}
       </div>
       <div className="gamecontrols">
         <button className="resetBtn" onClick={(e) => resetGame()}>

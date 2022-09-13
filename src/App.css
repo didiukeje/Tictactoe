@@ -1,17 +1,19 @@
-html, body {
+html {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+  max-height: 100vh;
+}
+body {
+  background: #1c3448;
   height: 100%;
 }
 .App {
   margin-top: 0;
   padding-top: 0;
   text-align: center;
-  background: #1c3448;
-  background-size: cover; 
-  background-repeat: no-repeat;
-  height: 100vh;
+  /*background-size: cover; 
+  background-repeat: no-repeat; */
 }
 @media screen and (max-width: 625px){
   .App {
@@ -52,3 +54,4 @@ html, body {
     transform: rotate(360deg);
   }
 }
+

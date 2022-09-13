@@ -55,6 +55,8 @@ input[type=text]:focus {
 @media screen and (max-width: 625px) {
     .playerinfo {
         padding-top: 0;
+        margin: 0 auto;
+        max-width: 100%;
     }
     .board-container {
         width: 100%;
@@ -64,11 +66,20 @@ input[type=text]:focus {
       height: 250px;
       overflow: hidden;
     }
+    .winner-table {
+        height: 250px;
+        width: 250px;
+        margin-top: 40px;
+    } 
+    .winner-table span {
+        position: relative;
+        top: 13vh;
+    }
     .cell {
       width: 81px;
       height: 81px;
     }
-  }
+}
 .gamecontrols {
     margin-top: 1em;
     font-size: 0.5em;
@@ -80,12 +91,19 @@ input[type=text]:focus {
     justify-content: center;
 }
 .winner-table {
-    font-family: cursive;
-    border-radius: 10px;
-    /* border: 1px solid ; */
-    font-size: 30px;
-    color: #fff;
+    position: absolute;
+    height: 306px;
+    width: 306px;
+    margin-top: 40px;
+    background: #efefefaa;
+    color: #045;
+    font-weight: 700;
+    font-size: 35px;
 } 
+.winner-table span {
+    position: relative;
+    top: 13vh;
+}
 .resetBtn {
     box-sizing: border-box;
     color: #fff;
@@ -106,7 +124,7 @@ input[type=text]:focus {
     background: #1c3448;
 }
 .playerinformation span{
-    font-size: 30px;
+    font-size: 20px;
     color: #fff;
 }
 .game-container {
