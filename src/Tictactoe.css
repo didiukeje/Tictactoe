@@ -73,7 +73,7 @@ input[type=text]:focus {
     } 
     .winner-table span {
         position: relative;
-        top: 13vh;
+        top: 20vh;
     }
     .cell {
       width: 81px;
