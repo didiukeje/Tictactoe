@@ -1,6 +1,5 @@
 import React, { useRef, useState } from "react";
 import "./TicTacToe.css";
-import "./board/board.js";
 const TicTacToe = (props) => {
   let { player1, player2 } = props;
   const [turn, setTurn] = useState(0); // 0 means 'P1' , 1 means 'P2'
