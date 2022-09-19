@@ -96,6 +96,7 @@ const TicTacToe = (props) => {
     setTurn(turn === 0 ? 1 : 0);
   };
 
+
   const playMyTurn = (e, index) => {
     if (winner || checkForTie()) return;
     if (e.target.innerText === "") {
