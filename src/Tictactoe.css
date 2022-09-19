@@ -95,10 +95,12 @@ input[type=text]:focus {
     height: 306px;
     width: 306px;
     margin-top: 40px;
-    background: #efefefaa;
-    color: #045;
+    background: #045;
+    color: #fff;
     font-weight: 700;
     font-size: 35px;
+   -webkit-animation: scale-up-bottom 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+   animation: scale-up-bottom 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 } 
 .winner-table span {
     position: relative;
