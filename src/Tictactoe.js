@@ -1,5 +1,8 @@
 import React, { useRef, useState } from "react";
 import "./TicTacToe.css";
+import "./Board.js"
+import Tile from "./Tile.js"
+
 const TicTacToe = (props) => {
   let { player1, player2 } = props;
   const [turn, setTurn] = useState(0); // 0 means 'P1' , 1 means 'P2'
@@ -121,15 +124,9 @@ const TicTacToe = (props) => {
           </>
         )}
         <div className="board" ref={ref}>
-          <div className="cell" onClick={(e) => playMyTurn(e, 0)}></div>
-          <div className="cell" onClick={(e) => playMyTurn(e, 1)}></div>
-          <div className="cell" onClick={(e) => playMyTurn(e, 2)}></div>
-          <div className="cell" onClick={(e) => playMyTurn(e, 3)}></div>
-          <div className="cell" onClick={(e) => playMyTurn(e, 4)}></div>
-          <div className="cell" onClick={(e) => playMyTurn(e, 5)}></div>
-          <div className="cell" onClick={(e) => playMyTurn(e, 6)}></div>
-          <div className="cell" onClick={(e) => playMyTurn(e, 7)}></div>
-          <div className="cell" onClick={(e) => playMyTurn(e, 8)}></div>
+          {
+            Array.from({ length: 9 }).map((_elem, i) => <Tile key={i} playMyTurn={playMyTurn} index={i} />)
+          }
         </div>
       </div>
       <div className="gamecontrols">
